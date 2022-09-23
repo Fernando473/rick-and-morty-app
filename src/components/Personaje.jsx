@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { unicoPersonaje } from "../funciones/funciones";
-import "../personaje.css"
+import "../estilos/Personaje.css"
 
 const Personaje = () => {
   const [personaje, setPersonajes] = useState(null);
@@ -20,9 +20,9 @@ const Personaje = () => {
         <span>
           Personaje con el id {params.id} con el nombre {personaje.name}
         </span>
-        e imagen <img src={personaje.image} alt="" />
+         <img src={personaje.image} alt="" />
       </div>
-      ):( "Cargando informacion .... espere" )}
+      ):( <span>Cargando informacion .... espere</span> )}
     </>
   );
 };

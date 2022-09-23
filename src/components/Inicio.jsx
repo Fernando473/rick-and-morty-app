@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import { allPersonajes } from '../funciones/funciones'
-import "../index.css"
+import "../estilos/Inicio.css"
 
 const Inicio = () => {
 
