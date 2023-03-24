@@ -11,12 +11,12 @@ const Personaje = () => {
 
   useEffect(() => {
     unicoPersonaje(params.id, setPersonajes);
-  }, []);
+  }, [params.id]);
 
   return (
     <>
       {personaje != null ? (
-        <div className="container">
+        <div className="container" key={personaje.id}>
           <h1>{personaje.name}</h1>
           <h2>{personaje.gender}</h2>
           <h2>{personaje.species}</h2>
