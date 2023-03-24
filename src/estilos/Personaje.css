@@ -1,3 +1,76 @@
-span{
-    color: white;
+
+  
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
 }
+h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out 0s ;
+    cursor: pointer;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s ease-in-out 0s ;
+}
+h2:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out 0s ;
+    cursor: pointer;
+
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }

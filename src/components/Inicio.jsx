@@ -15,11 +15,15 @@ const Inicio = () => {
     <>
       {personajes != null ? (
         personajes.map(personaje =>(
-          <div  className='lista' key={personaje.id}>
-            <a href={`/personaje/${personaje.id}`}>{personaje.name}</a>
+          <div  className='container-personaje' key={personaje.id}>
+            <a  className='a-inicio' href={`/personaje/${personaje.id}`}>{personaje.name}</a>
           </div>
         ))
-      ):('No existen personajes')}
+      ):(
+
+           <div class="lds-hourglass"></div>
+
+      )}
     </>
   )
 } 
