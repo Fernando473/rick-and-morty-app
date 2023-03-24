@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Fernando473.github.io/rick-and-morty-app",
   "name": "rick-and-morty-app",
   "version": "0.1.0",
+  "homepage": "https://Fernando473.github.io/rick-and-morty-app",
   "private": false,
   "dependencies": {
     "@testing-library/react": "^13.4.0",
